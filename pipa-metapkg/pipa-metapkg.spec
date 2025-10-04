@@ -7,7 +7,6 @@ License: MIT
 Requires: kernel
 Requires: xiaomi-pipa-firmware
 Requires: qbootctl
-Requires: pipa-kernel-flasher-hook
 Requires: pipa-dracut
 Requires: pipa-sound-conf
 Requires: bootmac
