@@ -1,6 +1,6 @@
 Name: pipa-sound-conf
 Version: 1.3
-Release: 1
+Release: 2
 Summary: Sound settings for Xiaomi Mi Pad 6 (pipa)
 Source1: Xiaomi Pad 6.conf
 Source2: HiFi_pipa.conf
@@ -11,6 +11,7 @@ Provides: alsa-ucm-conf-xiaomi-pipa = %{version}-%{release}
 Obsoletes: alsa-ucm-conf-xiaomi-pipa < %{version}-%{release}
 
 Requires: alsa-ucm
+Requires: wireplumber
 
 %description
 ALSA Use Case Manager configuration settings for Xiaomi Mi Pad 6 (pipa)
