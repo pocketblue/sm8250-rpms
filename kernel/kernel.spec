@@ -71,7 +71,8 @@ rm %{buildroot}/usr/lib/modules/%{version}*/build
 /usr/lib/modules/%{version}*
 
 %posttrans
-kernel-install add %{version}-%{release} /usr/lib/modules/%{version}-%{release}/vmlinuz
+dracut -f --kver %{version}-%{release} /usr/lib/modules/%{version}-%{release}/initramfs.img
+kernel-install add %{version}-%{release} /usr/lib/modules/%{version}-%{release}/vmlinuz /usr/lib/modules/%{version}-%{release}/initramfs.img
 
 %postun
 kernel-install remove %{version}-%{release} /usr/lib/modules/%{version}-%{release}/vmlinuz
